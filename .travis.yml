@@ -65,3 +65,4 @@ after_success:
           mv $artifact ${artifact/$VERSION/$VERSION.$RC};
       done
     - source deploy_travis.sh
+    - deploy
