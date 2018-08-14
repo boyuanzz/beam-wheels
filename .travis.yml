@@ -8,13 +8,9 @@ osx_image: xcode6.4
 env:
   global:
       # Please add RC and VERSION in travis build console > More options > Settings > Environment Variables with 'Display value in build log' enabled.
-      - RC=
-      - VERSION=
       # Your apache credential is needed here in order to upload artifacts into dist.apache.org
       # Please add APACHE_USERNAME and APACHE_SECRET in travis build console > More options > Settings > Environment Variables with 'Display value in build log' disabled.
       # After build finishes, delete your environment variables.
-      - APACHE_USERNAME=
-      - APACHE_SECRET=
       - PYTHON_ARTIFACTS_DIR=python
       - STAGING=https://dist.apache.org/repos/dist/dev/beam/${VERSION}/${PYTHON_ARTIFACTS_DIR}
       - BEAM_SVN_DIR=https://dist.apache.org/repos/dist/dev/beam
